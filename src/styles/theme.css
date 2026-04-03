@@ -1,0 +1,122 @@
+/* Light theme styles - only overrides what's necessary */
+body.light-theme {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+body.light-theme .navbar {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .navbar li {
+  color: #1a1a1a;
+}
+
+body.light-theme .navbar li:hover {
+  color: #7927ff;
+}
+
+body.light-theme .navbar select {
+  background: rgba(0, 0, 0, 0.05);
+  color: #1a1a1a;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme .navbar option {
+  background: #f8f9fa;
+  color: #1a1a1a;
+}
+
+body.light-theme .hero p {
+  color: #333333;
+}
+
+body.light-theme .crypto-table {
+  background: linear-gradient(rgba(121, 39, 255, 0.05), rgba(255, 39, 184, 0.05));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .table-layout {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .table-layout p {
+  color: #1a1a1a;
+}
+
+body.light-theme .features-hero p {
+  color: #333333;
+}
+
+body.light-theme .feature-card {
+  background: linear-gradient(rgba(121, 39, 255, 0.05), rgba(255, 39, 184, 0.05));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .feature-card p {
+  color: #333333;
+}
+
+body.light-theme .pricing-card {
+  background: linear-gradient(rgba(121, 39, 255, 0.05), rgba(255, 39, 184, 0.05));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .pricing-card p {
+  color: #333333;
+}
+
+body.light-theme .blog-card p {
+  color: #333333;
+}
+
+body.light-theme .blog-author .author-name {
+  color: #333333;
+}
+
+body.light-theme .blog-cta p,
+body.light-theme .blog-actions p {
+  color: #333333;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+body.light-theme .theme-toggle {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: #1a1a1a;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.light-theme .theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+  transform: scale(1.1);
+}

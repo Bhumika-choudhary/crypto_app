@@ -40,9 +40,9 @@ const currencyHandler = (event) =>{
       </Link>
       <ul>
        <Link to={'/'}> <li>Home</li></Link>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Blog</li>
+        <Link to={'/features'}> <li>Features</li></Link>
+        <Link to={'/pricing'}> <li>Pricing</li></Link>
+        <Link to={'/blog'}> <li>Blog</li></Link>
       </ul>
 
       <div className="nav-right">
@@ -51,7 +51,7 @@ const currencyHandler = (event) =>{
             <option value="eur">EUR</option>
             <option value="inr">INR</option>
         </select>
-        <button>Sign up <img src={arrow} alt="" /></button>
+        <button onClick={() => window.location.href = '/signup'}>Sign up <img src={arrow} alt="" /></button>
       </div>
     </div>
   )

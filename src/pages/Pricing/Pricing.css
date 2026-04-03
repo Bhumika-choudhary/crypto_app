@@ -1,0 +1,282 @@
+.pricing {
+  padding: 0px 10px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.pricing-hero {
+  max-width: 800px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.pricing-hero h1 {
+  font-size: max(4vw, 36px);
+  background: linear-gradient(135deg, #7927ff, #ff27b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing-hero p {
+  width: 75%;
+  color: #e3e3e3;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.pricing-card {
+  background: linear-gradient(rgba(84, 3, 255, 0.1), rgba(105, 2, 153, 0.1));
+  border: 1px solid rgba(121, 39, 255, 0.2);
+  border-radius: 15px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(121, 39, 255, 0.3);
+}
+
+.pricing-card.pro {
+  border-color: rgba(121, 39, 255, 0.5);
+  background: linear-gradient(rgba(84, 3, 255, 0.2), rgba(105, 2, 153, 0.2));
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #7927ff, #ff27b8);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing-header h3 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.currency {
+  font-size: 24px;
+  color: #7927ff;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+}
+
+.period {
+  color: #e3e3e3;
+  font-size: 18px;
+}
+
+.description {
+  color: #e3e3e3;
+  margin: 0;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  flex-grow: 1;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e3e3e3;
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.included svg {
+  color: #00D515;
+  flex-shrink: 0;
+}
+
+.not-included svg {
+  color: #ff4646;
+  flex-shrink: 0;
+}
+
+.not-included {
+  opacity: 0.6;
+}
+
+.pricing-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(121, 39, 255, 0.5);
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.pricing-btn:hover {
+  background: rgba(121, 39, 255, 0.1);
+  border-color: #7927ff;
+}
+
+.pricing-btn.primary {
+  background: linear-gradient(135deg, #7927ff, #ff27b8);
+  border: none;
+  color: white;
+}
+
+.pricing-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(121, 39, 255, 0.4);
+}
+
+.pricing-faq {
+  max-width: 800px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.pricing-faq h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  display: grid;
+  gap: 20px;
+}
+
+.faq-item {
+  background: linear-gradient(rgba(84, 3, 255, 0.1), rgba(105, 2, 153, 0.1));
+  border: 1px solid rgba(121, 39, 255, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
+}
+
+.faq-item h4 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #e3e3e3;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .pricing-hero p {
+    width: 90%;
+  }
+  
+  .pricing-card {
+    padding: 30px 20px;
+  }
+  
+  .amount {
+    font-size: 36px;
+  }
+  
+  .pricing-faq {
+    margin: 60px auto 0;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pricing-hero h1 {
+    font-size: 28px;
+  }
+  
+  .pricing-hero p {
+    font-size: 16px;
+  }
+  
+  .pricing-card {
+    padding: 25px 15px;
+  }
+  
+  .pricing-header h3 {
+    font-size: 24px;
+  }
+  
+  .currency {
+    font-size: 20px;
+  }
+  
+  .amount {
+    font-size: 32px;
+  }
+  
+  .period {
+    font-size: 16px;
+  }
+  
+  .pricing-faq h2 {
+    font-size: 24px;
+  }
+  
+  .faq-item {
+    padding: 20px;
+  }
+  
+  .faq-item h4 {
+    font-size: 18px;
+  }
+}
