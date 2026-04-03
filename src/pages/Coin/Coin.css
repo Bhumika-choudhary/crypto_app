@@ -44,7 +44,6 @@
     margin-top: 40px;
     background: linear-gradient(rgba(84,3,255,0.15), rgba(105,2,153,0.15));
     border-radius: 15px;
-    padding: 20px;
 }
 
 .coin-info {
@@ -52,6 +51,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+}
+
+
+.table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
 }
 
 .coin-info-row {
